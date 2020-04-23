@@ -75,6 +75,7 @@ const MainScreen = () => {
 
   const addTime = (time) => {
     setArcSweepAngle(0);
+    setStopWatchActive(false);
     setTimerComplete(false);
     setCurrentTime(currentTime + time);
   };
