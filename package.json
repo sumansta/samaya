@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "android-prod": "cd android && ./gradlew clean && ./gradlew assembleRelease",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
@@ -11,6 +12,9 @@
   },
   "dependencies": {
     "@callstack/reanimated-arc": "^0.1.0-alpha.3",
+    "appcenter": "3.1.1",
+    "appcenter-analytics": "3.1.1",
+    "appcenter-crashes": "3.1.1",
     "react": "16.11.0",
     "react-native": "0.62.2",
     "react-native-linear-gradient": "^2.5.6",
